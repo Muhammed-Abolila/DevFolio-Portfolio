@@ -1,0 +1,431 @@
+body {
+    background-color: #f6f6f6;
+}
+
+
+/* <============Start Fixed Elements */
+
+#btnUp {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    font-size: 3rem;
+    color: #0078ff;
+    z-index: 444545;
+    display: none;
+}
+
+
+/* <============End Fixed Elements */
+
+
+/*Start Navbar Section*/
+
+.navbar {
+    color: #0078ff;
+    background-color: #fff;
+}
+
+.navbar .navbar-brand {
+    font-size: 25px;
+    color: #0078ff
+}
+
+.navbar .navbar-collapse .nav-item {
+    font-size: 20px;
+    position: relative;
+}
+
+.navbar .navbar-collapse .nav-item .nav-link {
+    color: #0078ff
+}
+
+.navbar .navbar-collapse .nav-item .bord {
+    width: 0px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    transition: .5s width ease-in-out;
+}
+
+.navbar .navbar-collapse .nav-item:hover .bord {
+    width: 35px;
+}
+
+.navbar .navbar-collapse .nav-item .nav-link:hover,
+.navbar .navbar-brand:hover {
+    color: #0078ff
+}
+
+@media (max-width:992px) {
+    .navbar .navbar-collapse .nav-item .bord {
+        left: 0px;
+    }
+}
+
+
+/*End Navbar Section*/
+
+
+/*Start Header Section*/
+
+.header {
+    background-image: url("../img/intro-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header .caption h1 {
+    font-size: 390%
+}
+
+.header .caption p {
+    font-size: 130%
+}
+
+
+/*animation*/
+
+.typewriter:before {
+    border-right: 3px solid #fff;
+    content: "";
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1.7em;
+    width: 7em;
+    white-space: nowrap;
+}
+
+.animated:before {
+    animation: textCursor 500ms steps(14) infinite normal, typewriter 5s steps(20) 1s infinite alternate;
+}
+
+@keyframes textCursor {
+    from {
+        border-color: (255, 255, 255, .75)
+    }
+    to {
+        border-color: transparent
+    }
+}
+
+@keyframes typewriter {
+    0% {
+        width: 0;
+        content: "web developer"
+    }
+    40% {
+        width: 8em;
+        content: "web developer"
+    }
+    60% {
+        width: 0;
+        content: "web developer"
+    }
+    80% {
+        width: 8em;
+        content: "web designer"
+    }
+    100% {
+        width: 0;
+        content: "web designer"
+    }
+}
+
+
+/*End Header Section*/
+
+
+/*Start About Me Section*/
+
+.about-me .right h2 {
+    position: relative;
+}
+
+.about-me .right h2::after {
+    content: '';
+    width: 100px;
+    height: 5px;
+    background-color: #0078ff;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    border-radius: 5px;
+}
+
+@media (max-width:991px) {
+    .about-me img {
+        width: 120%;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width:767px) {
+    .about-me img {
+        width: 30%
+    }
+}
+
+
+/*End About Me Section*/
+
+
+/*Start Services Section*/
+
+.services h2 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.services p {
+    font-size: 18px
+}
+
+.services .border-center,
+.portfolio .portfolio-top .border-center,
+.blog .blog-top .border-center {
+    width: 45px;
+    height: 3px;
+    border-radius: 4px;
+    background-color: #0078ff;
+    margin: auto
+}
+
+.services .card .card-body {
+    background-color: #fff;
+    border-radius: 10px
+}
+
+.services .card .card-body i {
+    width: 125px;
+    height: 125px;
+    line-height: 115px;
+    font-size: 3rem;
+    border: 7px solid #0078ff;
+    transition: .5s all ease-in-out;
+}
+
+.services .card .card-body:hover i {
+    background-color: #0078ff;
+    color: #fff;
+    border: 7px solid #cde1f8
+}
+
+.services .card .card-body .card-text {
+    font-size: 18px
+}
+
+
+/*End Services Section*/
+
+
+/*Start Counter Section*/
+
+.counter {
+    background-image: url("../img/post-3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.counter .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 120, 255, .7);
+}
+
+.counter .row {
+    height: 70vh;
+}
+
+.counter i {
+    font-size: 45px
+}
+
+.counter .number {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+/*End Counter Section*/
+
+
+/*Start Portfolio Section*/
+
+.portfolio .card img {
+    transition: 1s transform ease-in-out;
+}
+
+.portfolio .card:hover img {
+    transform: scale(1.4);
+}
+
+.card-body p {
+    font-size: 11px
+}
+
+.card-body span {
+    color: #0078ff
+}
+
+.card-body .right-icon {
+    position: absolute;
+    right: 9px;
+    bottom: 36px;
+    font-size: 28px;
+}
+
+
+/*End Portfolio Section*/
+
+
+/*Start Testimonials Section*/
+
+.testimonial {
+    background-image: url("../img/overlay-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.testimonial .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 120, 255, .7);
+}
+
+
+/*End Testimonials Section*/
+
+
+/*Start Blog Section*/
+
+.blog .card .image1,
+.blog .card .image2,
+.blog .card .image3 {
+    position: relative;
+}
+
+.blog .card .image1:after,
+.blog .card .image2:after,
+.blog .card .image3:after {
+    width: 95px;
+    height: 27px;
+    background-color: #0078ff;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    line-height: 28px;
+    border-radius: 7px;
+    position: absolute;
+    bottom: -15px;
+    left: 38%
+}
+
+.blog .card .image1:after {
+    content: "Travel";
+}
+
+.blog .card .image2:after,
+.blog .card .image3:after {
+    content: "Web Design";
+}
+
+.blog .card a {
+    color: #000;
+    text-decoration: none;
+    transition: .5s all ease-in-out
+}
+
+.blog .card a:hover {
+    color: #0078ff
+}
+
+.blog .card .card-footer a {
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.blog .card .card-footer .auther img {
+    width: 35px;
+    height: 35px
+}
+
+.blog .card .card-footer .time {
+    line-height: 35px;
+}
+
+@media (min-width:767px) and (max-width:992px) {
+    .blog .card .image1:after,
+    .blog .card .image2:after,
+    .blog .card .image3:after {
+        left: 30%
+    }
+    .card-footer {
+        flex-direction: column;
+    }
+    .auther {
+        text-align: left;
+    }
+    .time {
+        text-align: right;
+    }
+}
+
+
+/*End Blog Section*/
+
+
+/*Start Footer Section*/
+
+.footer {
+    background-image: url("../img/overlay-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.footer .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 120, 255, .7);
+}
+
+.footer .bord {
+    width: 19%;
+    height: 3px;
+    background-color: #0078ff
+}
+
+.footer .right .icon {
+    color: #0078ff
+}
+
+.footer .right .icons i {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border: 3px solid #0078ff;
+    border-radius: 50%;
+    line-height: 42px;
+    transition: .5s all ease-in-out;
+}
+
+.footer .right .icons i:hover {
+    background-color: #0078ff;
+    color: #fff;
+    border: 3px solid #cde1f8
+}
+
+@media (max-width:575px) {
+    .footer .footer-caption {
+        margin: 0px 10px
+    }
+}
+
+
+/*End Footer Section*/
